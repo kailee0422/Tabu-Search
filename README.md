@@ -31,5 +31,6 @@ f(10100)=|(16+4)-2^(5-2) |=12
 #### 4.更改將二進為數值加一
 
 ## 結果說明 
-
+![image](https://github.com/kailee0422/Tabu-Search/assets/71311828/6a51f2af-34e7-40f1-973c-7a9296f25651)
+初值的部分，這邊是取random的值，tweak的方法如上述，經過tweak以及quality的新舊值比較，以找出最佳解
 
