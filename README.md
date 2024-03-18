@@ -15,10 +15,10 @@ f(x)=|B2D(s)-2^(n-2) |,s_i∈{0,1},n>2
 f(10100)=|(16+4)-2^(5-2) |=12
 
 ## 設定參數 
-- NUM_BITS是設定Bits數量50
-- MAX_TABU_LENGTH是設定Desired maximum tabu list length
-- NUM_ITERATION是根據題目設定1000次(找到最佳解或接近最佳解) 
-- NUM_TWEAK 是設定number of tweaks desired to sample the gradient
+- NUM_BITS在這邊是設定Bits數量50
+- MAX_TABU_LENGTH是設定Desired maximum tabu list length，在這邊是設定10
+- NUM_ITERATION是根據題目設定1000次(迴圈去找到最佳解或接近最佳解)
+- NUM_TWEAK 是設定number of tweaks desired to sample the gradient，在這邊是設定2
 
 ## Tweak說明 
 在這邊我使用了四個調整的方法，分別是 
