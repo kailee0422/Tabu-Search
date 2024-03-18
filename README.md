@@ -7,7 +7,7 @@
 
 
 ## deception problem 
-- Deception Problem是一個最大化問題
+Deception Problem是一個最大化問題
 ### 公式
 f(x)=|B2D(s)-2^(n-2) |,s_i∈{0,1},n>2
 
