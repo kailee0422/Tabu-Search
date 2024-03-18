@@ -1,27 +1,28 @@
-# Tabu-Search
-利用Tabu Search演算法找出deception problem之最佳解(或接近最佳解) ，Tabu Search之iteration次數設定為1000，deception problem 之Bits數量設定為50。
+Tabu-Search Algorithm
+Objective: Utilize the Tabu Search algorithm to find the optimal (or near-optimal) solution for the deception problem.
 
-##Algotithm
-![image](https://github.com/kailee0422/Tabu-Search/assets/71311828/b8c0788c-bdf8-4aa5-9396-a8a654cd440c)
+Parameters:
 
-##deception problem 
-f(x)=|B2D(s)-2^(n-2) |,s_i∈{0,1},n>2
+Number of Bits (NUM_BITS): 50
+Desired Maximum Tabu List Length (MAX_TABU_LENGTH)
+Number of Iterations (NUM_ITERATIONS): 1000
+Number of Tweaks (NUM_TWEAK): Specifies the number of tweaks desired to sample the gradient
+Deception Problem
+The deception problem is defined as follows:
 
-##設定參數
-NUM_BITS是設定Bits數量50
-MAX_TABU_LENGTH是設定Desired maximum tabu list length
-NUM_ITERATION是根據題目設定1000次(找到最佳解或接近最佳解)
-NUM_TWEAK 是設定number of tweaks desired to sample the gradient
+scss
+Copy code
+f(x) = |B2D(s) - 2^(n-2)|
+Where:
 
-##Tweak說明
-在這邊我使用了四個調整的方法，分別是
-######1.隨邊更改一個位元
+s_i ∈ {0,1} represents binary bits.
+n > 2 is the number of bits.
+Tweak Methods
+In this implementation, four tweak methods are employed:
 
-######2.更改從隨意的索引到LSB
-
-######3.更改從MSB到隨意的索引
-
-######4.更改將二進為數值加一
-
-
-
+Flip One Bit Randomly: Changes one bit randomly.
+Flip Bits from Random Index to LSB (Least Significant Bit): Changes bits from a random index to the LSB.
+Flip Bits from MSB (Most Significant Bit) to Random Index: Changes bits from the MSB to a random index.
+Increment Binary Value by One: Adds one to the binary value.
+Algorithm Description
+The Tabu-Search algorithm iteratively explores the solution space, utilizing various tweak methods to search for the optimal solution while avoiding getting trapped in local optima. The algorithm maintains a tabu list to store recently visited solutions, preventing revisiting them in subsequent iterations. The process continues until the termination condition is met or the maximum number of iterations is reached.
