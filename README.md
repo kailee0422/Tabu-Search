@@ -9,9 +9,10 @@
 ## deception problem 
 - Deception Problem是一個最大化問題
 ### 公式
-- ![image](https://github.com/kailee0422/Tabu-Search/assets/71311828/14b0c95a-5680-4714-82b3-57c8cde6b629)
+f(x)=|B2D(s)-2^(n-2) |,s_i∈{0,1},n>2
+
 ### 範例
-- ![image](https://github.com/kailee0422/Tabu-Search/assets/71311828/4c97e7f0-11c0-467d-b623-b3db435d4045)
+f(10100)=|(16+4)-2^(5-2) |=12
 
 ## 設定參數 
 - NUM_BITS是設定Bits數量50
