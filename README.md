@@ -21,7 +21,7 @@ f(10100)=|(16+4)-2^(5-2) |=12
 - NUM_TWEAK 是設定number of tweaks desired to sample the gradient，在這邊是設定2
 
 ## Tweak說明 
-在這邊我使用了四個調整的方法，分別是 
+在這邊我使用了六個調整的方法，以便照找到最好的tweak方法，其方法分別是 
 #### 1.隨邊更改一個位元
 
 #### 2.更改從隨意的索引到LSB
