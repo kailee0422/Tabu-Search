@@ -34,6 +34,7 @@ f(10100)=|(16+4)-2^(5-2) |=12
 
 #### 6.更改二進位數值奇數位數的位元
 
+
 ## 結果說明 
 ![image](https://github.com/kailee0422/Tabu-Search/assets/71311828/bec30eee-9b01-4e03-a86f-e72b942974a6)
 初值的部分，這邊是取random的值，tweak的方法如上述，經過tweak以及quality的新舊值比較，以更新tabu_list(10個為上限)並找出接近最佳解和tweak的最佳方法。
